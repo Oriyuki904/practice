@@ -1,0 +1,241 @@
+body{
+    background-image: url("images/background.png");
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: #F7F8F8;
+}
+header{
+}
+html,body {
+    height:100%;
+    padding-top:66px;
+}
+.nav_banner{
+    background-color:rgba(255,255,255,0.2);
+}
+.nav_logo{
+    /*padding-top: 23px;*/
+    float: left;
+}
+
+
+.nav_effect{
+    margin-top: 25px;
+
+}
+.nav_effect a {
+    display: inline-block;
+    margin: 15px 15px 15px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 微軟正黑體, sans-serif, Tahoma;
+    font-size: 120%;
+    font-weight: 500;
+
+}
+.nav_effect a:hover,
+.nav_effect a:focus {
+    outline: none;
+}
+
+.nav_effect a::before,
+.nav_effect a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav_effect a::before {
+    margin-right: 5px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.nav_effect a::after {
+    margin-left: 5px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.nav_effect a:hover::before,
+.nav_effect a:hover::after,
+.nav_effect a:focus::before,
+.nav_effect a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.aion_silder{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.navbar {
+    /*!*-webkit-transition:padding 0.2s ease;*/
+    /*-moz-transition:padding 0.2s ease;*/
+    /*-o-transition:padding 0.2s ease;*/
+    /*transition:padding 0.2s ease;*!*/
+    transition-duration: 1s;
+}
+
+.affix {
+    padding-top: 0.1em !important;
+    padding-bottom: 0.1em !important;
+    height: 80px;
+    /*-webkit-transition:padding 0.2s linear;*/
+    /*-moz-transition:padding 0.2s linear;*/
+    /*-o-transition:padding 0.2s linear;*/
+    /*transition:padding 0.2s linear;*/
+    background-color:rgba(145,99,167,1);
+}
+.shrink_down {
+    margin-top: 5px;
+    height: 67px !important;
+    width: 180px !important;
+    /*-webkit-transition:width 0.2s , height 0.2s linear;*/
+    /*-moz-transition:width 0.2s , height 0.2s linear;*/
+    /*-o-transition:width 0.2s , height 0.2s linear;*/
+    /*transition:width 0.2s , height 0.2s linear;*/
+}
+
+section {
+    min-height:calc(100% - 70px);
+}
+
+.banner_content{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.nav_logo_aion{
+    width: 230px;
+    height: 88px;
+    transition-duration: 1s;
+}
+
+.Navlogoshrink{
+    width: 60px;
+    height: 30px;
+}
+
+marquee{
+    width: 1200px;
+    overflow:-webkit-marquee;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 微軟正黑體, sans-serif, Tahoma;
+
+}
+
+.marquee_position{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.silder_style{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.carousel-indicators_a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 550px;
+    z-index: 15;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left:0;
+    list-style: none;
+    width: 1200px;
+
+}
+
+.carousel-indicators_a li {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    max-width:2000px;
+    height:150px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel-indicators_a li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.carousel-indicators_a li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.carousel-indicators_a .active {
+    background-color: rgba(145,99,167,1);
+}
+
+.smallpicture00{
+background-image: url("images/small/aion_01s.png");
+
+}
+.smallpicture01{
+    background-image: url("images/small/aion_02s.png");
+}
+.smallpicture02{
+    background-image: url("images/small/aion_03s.png");
+}
+.smallpicture03{
+    background-image: url("images/small/aion_04s.png");
+}
+.smallpicture04{
+    background-image: url("images/small/aion_05s.png");
+}
+
+.blank{
+    padding:80px;
+}
+
+.nav_space{
+margin-left: 80px;
+
+}
